@@ -80,3 +80,53 @@ nav a:hover {
     background: #ff7955;
     transform: translateY(-3px);
 }
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image img{
+    width: 100%;
+    max-width: 550px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Responsive design */
+@media (max-width: 768px){
+    .navbar{
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+    nav{
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero h1{
+        font-size: 36px;
+    }
+    .description{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    .hero-image img{
+        height: auto;
+        max-height:400px ;
+        object-fit: cover;
+    }
+}
